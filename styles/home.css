@@ -1,0 +1,86 @@
+/* Hero band: full-width background to reduce “empty sides” feeling */
+.hero-band{
+  background: linear-gradient(180deg, rgba(47,111,158,0.08), rgba(47,111,158,0));
+  padding: 34px 0 10px;
+}
+
+.hero{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0 40px;
+}
+
+.hero-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0 12px;
+}
+
+.hero-meta{
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.hero-media img{
+  height: 480px;            /* makes hero feel more “anchored” */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* Split section layout */
+.split{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Rocky mountain band: calming “soul” moment */
+.mountain-band{
+  position: relative;
+  padding: 82px 0;
+  background-image: url("/assets/home/rocky-mountains.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mountain-band::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 28, 40, 0.62), rgba(12, 28, 40, 0.40));
+}
+
+.mountain-inner{
+  position: relative;
+  color: white;
+  max-width: 900px;
+}
+
+.mountain-inner h2{
+  color: white;
+  margin-bottom: 10px;
+}
+
+.mountain-inner p{
+  color: rgba(255,255,255,0.88);
+  font-size: 16px;
+  max-width: 70ch;
+  margin: 0 0 18px;
+}
+
+/* Basic responsive safety for older users */
+@media (max-width: 980px){
+  .hero{ grid-template-columns: 1fr; }
+  .hero-media img{ height: 360px; }
+  .split{ grid-template-columns: 1fr; }
+  .nav{ display: none; } /* optional for now; we can add a simple mobile menu later */
+}
