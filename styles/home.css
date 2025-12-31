@@ -1,51 +1,184 @@
-/* Hero band: full-width background to reduce “empty sides” feeling */
-.hero-band{
-  background: linear-gradient(180deg, rgba(47,111,158,0.08), rgba(47,111,158,0));
-  padding: 34px 0 10px;
-}
+/* =========================================================
+   HOME PAGE STYLES
+   ========================================================= */
+
+/* =========================
+   HERO – FULL WIDTH IMAGE
+   ========================= */
 
 .hero{
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 28px;
-  align-items: center;
-  padding: 28px 0 40px;
-}
-
-.hero-actions{
+  position: relative;
+  min-height: 72vh;
+  padding-top: 16px;
+  background-image: url("/assets/home/hero-chambers.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 18px 0 12px;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-meta{
-  color: var(--muted);
+/* Gradient + subtle vignette for consistent readability */
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 80% at 50% 40%, rgba(12, 28, 40, 0.35), rgba(12, 28, 40, 0.75)),
+    linear-gradient(180deg, rgba(12, 28, 40, 0.55), rgba(12, 28, 40, 0.65));
+}
+
+/* Centered hero content panel */
+.hero-content{
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  padding: 34px 28px;
+  text-align: center;
+  color: white;
+
+  border-radius: 20px;
+  background: rgba(10, 20, 28, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+}
+
+/* Institution kicker */
+.hero-kicker{
   font-size: 14px;
-  margin-top: 8px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
+  margin: 0;
 }
 
-.hero-media img{
-  height: 480px;            /* makes hero feel more “anchored” */
-  width: 100%;
-  object-fit: cover;
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
+/* Divider under kicker */
+.hero-divider{
+  width: 60px;
+  height: 1px;
+  margin: 18px auto 26px;
+  background: rgba(255, 255, 255, 0.28);
 }
 
-/* Split section layout */
+/* Main headline */
+.hero h1{
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.12;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: white;
+}
+
+/* Secondary line under the H1 */
+.hero-secondary{
+  font-size: clamp(21px, 2.4vw, 26px);
+  font-weight: 500;
+  margin: 0 0 18px;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Subtitle */
+.hero-subhead{
+  font-size: 18px;
+  max-width: 58ch;
+  line-height: 1.5;
+  margin: 0 auto 28px;
+  opacity: 0.9;
+}
+
+.hero .btn{
+  margin-top: 14px;
+}
+
+/* =========================
+   SPLIT LAYOUTS
+   ========================= */
+
 .split{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 40px;
   align-items: start;
 }
 
-/* Rocky mountain band: calming “soul” moment */
+/* =========================
+   WHAT TO EXPECT (aligned layout)
+   ========================= */
+
+.what-to-expect-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.what-to-expect-header{
+  grid-column: 1 / -1;
+  max-width: 72ch;
+  margin-bottom: 12px; /* keeps header tight but not cramped */
+}
+
+.what-to-expect-header h2{
+  margin-bottom: 8px;
+}
+
+.what-to-expect-header .subhead{
+  margin-bottom: 0; /* prevents extra dead space */
+  margin-top: 0;
+  line-height: 1.55;
+}
+
+.what-to-expect-cards{
+  min-width: 0;
+}
+
+.what-to-expect .card{
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.what-to-expect .card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(16, 24, 40, 0.08);
+}
+
+.what-to-expect-media{
+  margin: 0;
+  margin-top: 12px;
+  align-self: start;
+}
+
+.what-to-expect-media img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.what-to-expect .card-stack .card:first-child{
+  box-shadow: 0 14px 36px rgba(16, 24, 40, 0.06);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .what-to-expect-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .what-to-expect-header{
+    margin-bottom: 12px;
+  }
+}
+
+/* =========================
+   ROCKY MOUNTAIN BAND
+   ========================= */
+
 .mountain-band{
   position: relative;
-  padding: 82px 0;
+  padding: 110px 0 120px;
   background-image: url("/assets/home/rocky-mountains.jpg");
   background-size: cover;
   background-position: center;
@@ -56,7 +189,8 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(12, 28, 40, 0.62), rgba(12, 28, 40, 0.40));
+    radial-gradient(70% 90% at 40% 50%, rgba(12, 28, 40, 0.25), rgba(12, 28, 40, 0.70)),
+    linear-gradient(180deg, rgba(12, 28, 40, 0.58), rgba(12, 28, 40, 0.48));
 }
 
 .mountain-inner{
@@ -67,20 +201,62 @@
 
 .mountain-inner h2{
   color: white;
-  margin-bottom: 10px;
+  margin: 0 0 12px;
+  text-shadow: 0 8px 28px rgba(0,0,0,0.35);
 }
 
 .mountain-inner p{
-  color: rgba(255,255,255,0.88);
-  font-size: 16px;
   max-width: 70ch;
-  margin: 0 0 18px;
+  opacity: 0.92;
+  margin: 0 0 24px;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-/* Basic responsive safety for older users */
+/* =========================
+   RESPONSIVE SAFETY
+   ========================= */
+
 @media (max-width: 980px){
-  .hero{ grid-template-columns: 1fr; }
-  .hero-media img{ height: 360px; }
-  .split{ grid-template-columns: 1fr; }
-  .nav{ display: none; } /* optional for now; we can add a simple mobile menu later */
+  .split{
+    grid-template-columns: 1fr;
+  }
+
+  .what-to-expect-copy{
+    padding-top: 0;
+  }
+
+  .media-card::before{
+    background: none;
+  }
+
+  .cta-card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero{
+    min-height: 62vh;
+  }
+
+  .hero-content{
+    padding: 34px 18px;
+  }
+
+  .hero h1{
+    font-size: clamp(32px, 7vw, 44px);
+    line-height: 1.10;
+  }
+
+  .hero-kicker{
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Transparency accessibility */
+@media (prefers-reduced-transparency: reduce){
+  .hero-content{
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(10, 20, 28, 0.45);
+  }
 }

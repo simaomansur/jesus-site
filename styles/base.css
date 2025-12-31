@@ -15,7 +15,11 @@
 }
 
 *{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
+
+html{
+    scroll-padding-top: 90px;
+}
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
@@ -23,6 +27,8 @@ body{
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
 }
 
 img{ max-width:100%; display:block; }
@@ -72,3 +78,8 @@ h3{ font-size: 18px; }
 }
 
 .dot{ margin: 0 10px; color: rgba(26,35,43,0.35); }
+
+:focus-visible{
+  outline: 3px solid rgba(47,111,158,0.45);
+  outline-offset: 3px;
+}

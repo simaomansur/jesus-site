@@ -4,19 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rocky Mountain Hyperbaric Institute</title>
-  <meta name="description" content="Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting. Serving Louisville, Boulder, and the Front Range." />
+  <meta
+    name="description"
+    content="Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting. Serving Louisville, Boulder, and the Front Range."
+  />
 
   <link rel="stylesheet" href="/styles/base.css" />
   <link rel="stylesheet" href="/styles/components.css" />
   <link rel="stylesheet" href="/styles/home.css" />
 </head>
 
-<body>
+<body class="home">
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/index.html" aria-label="Rocky Mountain Hyperbaric Institute home">
-        <img class="brand-logo" src="/assets/global/logo.png" alt="Rocky Mountain Hyperbaric Institute" />
+        <img
+          class="brand-logo"
+          src="/assets/global/logo.png"
+          alt="Rocky Mountain Hyperbaric Institute"
+        />
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
@@ -37,60 +44,68 @@
 
   <main>
     <!-- Hero (full-width band, constrained content) -->
-    <section class="hero-band">
-      <div class="container hero">
-        <div class="hero-copy">
-          <h1>Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting.</h1>
-          <p class="lead">
-            Medical-grade hyperbaric care for individuals navigating complex and chronic medical conditions.
-          </p>
+    <section class="hero">
+      <div class="hero-overlay"></div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
-            <a class="btn btn-secondary" href="/pages/how-hbot-works.html">Learn how hyperbaric therapy works</a>
-          </div>
+      <div class="hero-content">
+        <p class="hero-kicker">Rocky Mountain Hyperbaric Institute</p>
+        <div class="hero-divider"></div>
 
-          <p class="hero-meta">
-            Serving Louisville, Boulder, and the Front Range <span class="dot">•</span> In operation since 2007
-          </p>
-        </div>
+        <h1>Physician-supervised hyperbaric oxygen therapy</h1>
 
-        <div class="hero-media" aria-hidden="true">
-          <img src="/assets/home/hero-chambers.jpg" alt="" />
-        </div>
+        <p class="hero-secondary">In a calm outpatient setting</p>
+
+        <p class="hero-subhead">
+          Medical-grade hyperbaric care for individuals managing complex and chronic medical
+          conditions.
+        </p>
+
+        <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
       </div>
     </section>
 
     <!-- What to expect -->
-    <section class="section">
-      <div class="container split">
-        <div>
+    <section class="section what-to-expect">
+      <div class="container what-to-expect-grid">
+        <header class="what-to-expect-header">
           <h2>What to expect</h2>
           <p class="subhead">
-            If you’re new to hyperbaric therapy, understanding the process can help you feel more comfortable taking the next step.
+            If you’re new to hyperbaric therapy, understanding the process can help you feel more
+            comfortable moving forward.
           </p>
+        </header>
 
+        <div class="what-to-expect-cards">
           <div class="card-stack">
             <article class="card">
               <h3>Initial review</h3>
-              <p>We begin with a thoughtful review of your medical history, goals, and available records to determine whether hyperbaric therapy may be appropriate.</p>
+              <p>
+                We begin with a thoughtful review of your medical history, goals, and available
+                records to determine whether hyperbaric therapy may be appropriate.
+              </p>
             </article>
 
             <article class="card">
               <h3>Supervised treatment sessions</h3>
-              <p>Sessions take place in a clear, medical-grade chamber with continuous monitoring by trained staff.</p>
+              <p>
+                Sessions take place in a clear, medical-grade chamber with continuous monitoring by
+                trained staff.
+              </p>
             </article>
 
             <article class="card">
               <h3>Ongoing guidance</h3>
-              <p>Your progress is reviewed over time, and recommendations are adjusted as needed based on your response and overall care plan.</p>
+              <p>
+                Your progress is reviewed over time, and recommendations are adjusted as needed
+                based on your response and overall care plan.
+              </p>
             </article>
           </div>
         </div>
 
-        <div class="media-card" aria-hidden="true">
+        <figure class="what-to-expect-media" aria-hidden="true">
           <img src="/assets/home/what-to-expect.jpg" alt="" />
-        </div>
+        </figure>
       </div>
     </section>
 
@@ -116,7 +131,8 @@
         </div>
 
         <p class="fineprint">
-          Not every condition is appropriate for hyperbaric therapy. We’ll help you understand whether it makes sense for your situation.
+          Not every condition is appropriate for hyperbaric therapy. We’ll help you understand
+          whether it makes sense for your situation.
         </p>
       </div>
     </section>
@@ -129,8 +145,12 @@
 
         <div class="callout">
           <p>
-            We use medical-grade metal and glass chambers similar to those used in hospital-based programs. These chambers allow physicians to prescribe clinically relevant pressure ranges when appropriate. Every treatment plan is individualized, with safety and medical context guiding each recommendation.
+            We use medical-grade metal and glass chambers similar to those used in hospital-based
+            programs. These chambers allow physicians to prescribe clinically relevant pressure
+            ranges when appropriate. Every treatment plan is individualized, with safety and
+            medical context guiding each recommendation.
           </p>
+
           <div class="section-actions">
             <a class="btn btn-secondary" href="/pages/how-hbot-works.html">How HBOT works</a>
           </div>
@@ -138,30 +158,27 @@
       </div>
     </section>
 
-    <!-- Rocky Mountain band (full-width, calming, not salesy) -->
-    <section class="mountain-band" aria-label="Rocky Mountain Hyperbaric Institute in Colorado">
+    <!-- Mountain band + embedded CTA -->
+    <section class="mountain-band">
       <div class="container mountain-inner">
         <h2>Care in a calm, Colorado outpatient setting</h2>
         <p>
-          We’re here to answer questions, explain options, and help you understand next steps at a pace that feels comfortable.
+          We’re here to answer questions, explain options, and help you understand next steps at a
+          pace that feels comfortable.
         </p>
-        <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
-      </div>
-    </section>
 
-    <!-- Final CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-card">
+        <div class="cta-card cta-card--embedded cta-card--stacked">
           <div>
-            <h2>Not sure if hyperbaric therapy is right for you?</h2>
-            <p class="subhead">
-              Reach out to ask questions or request a consultation. Our team is happy to talk through your situation and explain next steps.
+            <h3>Not sure if hyperbaric therapy is right for you?</h3>
+            <p>
+              Reach out to ask questions or request a consultation. Our team is happy to talk
+              through your situation and explain next steps.
             </p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
-            <a class="btn btn-secondary" href="/pages/contact.html">Contact information</a>
+
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
+              <a class="btn btn-secondary" href="/pages/contact.html">Contact information</a>
+            </div>
           </div>
         </div>
       </div>
@@ -170,21 +187,57 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
+    <div class="container footer-top">
+      <div class="footer-brand">
         <strong>Rocky Mountain Hyperbaric Institute</strong>
-        <div class="footer-muted">Louisville, CO <span class="dot">•</span> Serving the Front Range</div>
+        <div class="footer-muted">
+          Louisville, CO <span class="dot">•</span> Serving the Front Range
+        </div>
+        <p class="footer-blurb">
+          Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting.
+        </p>
       </div>
 
-      <div class="footer-links">
-        <a href="/pages/contact.html">Contact</a>
-        <a href="/pages/pricing-coverage.html">Pricing & Coverage</a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-title">Contact</div>
+          <a class="footer-link" href="/pages/contact.html">Request a consultation</a>
+          <a class="footer-link" href="/pages/contact.html">Contact information</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Explore</div>
+          <a class="footer-link" href="/pages/how-hbot-works.html">How HBOT works</a>
+          <a class="footer-link" href="/pages/conditions.html">Conditions we treat</a>
+          <a class="footer-link" href="/pages/pricing-coverage.html">Pricing & Coverage</a>
+          <a class="footer-link" href="/pages/veterans.html">Veterans</a>
+          <a class="footer-link" href="/pages/about.html">About</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <div class="footer-muted">By appointment</div>
+          <div class="footer-muted">Response within 1 business day</div>
+        </div>
       </div>
     </div>
 
-    <div class="container footer-disclaimer">
-      Information on this website is for educational purposes and is not medical advice. Please consult a qualified clinician regarding diagnosis and treatment.
+    <div class="container footer-bottom">
+      <div class="footer-fineprint">
+        Information on this website is for educational purposes and is not medical advice. Please consult a qualified clinician regarding diagnosis and treatment.
+      </div>
+
+      <div class="footer-legal">
+        <span class="footer-muted">© <span id="year"></span> Rocky Mountain Hyperbaric Institute</span>
+      </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/scripts/header-scroll.js"></script>
+
 </body>
 </html>

@@ -5,7 +5,20 @@
   z-index: 50;
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  transition: transform 0.28s ease;
+  will-change: transform;
+}
+
+.site-header.is-hidden{
+  transform: translateY(-100%);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+  .site-header{
+    background: #ffffff;
+  }
 }
 
 .header-inner{
@@ -17,7 +30,7 @@
 }
 
 .brand-logo{
-  height: 44px;   /* bigger logo */
+  height: 65px;   /* bigger logo */
   width: auto;
 }
 
@@ -102,7 +115,18 @@
   border: 1px solid var(--border);
 }
 
-.section-actions{ margin-top: 16px; }
+.section-actions{ margin-top: 24px; }
+
+.section .btn-secondary{
+  background: rgba(47, 111, 158, 0.06);
+  border-color: rgba(47, 111, 158, 0.25);
+  color: var(--brand);
+}
+
+.section .btn-secondary:hover{
+  background: rgba(47, 111, 158, 0.10);
+  border-color: rgba(47, 111, 158, 0.35);
+}
 
 /* Pills */
 .pill-grid{
@@ -114,20 +138,22 @@
 
 .pill{
   background: white;
-  border: 1px solid var(--border);
-  padding: 10px 14px;
+  border: 1px solid rgba(18, 34, 46, 0.08);
+  color: var(--text);
+  padding: 12px 18px;
   border-radius: 999px;
   font-size: 14px;
+  line-height: 1.4;
 }
 
 /* Callout */
 .callout{
   background: white;
   border: 1px solid var(--border);
-  border-radius: 22px;
+  border-radius: 28px;
   padding: 18px 18px;
   box-shadow: 0 12px 34px rgba(16,24,40,0.05);
-  max-width: 980px;
+  max-width: 900px;
 }
 
 .callout p{ margin: 0; color: var(--muted); }
@@ -146,6 +172,29 @@
 }
 
 .cta-actions{ display:flex; gap: 12px; flex-wrap: wrap; }
+
+.cta-card--embedded{
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(4px);
+}
+
+.cta-card--embedded h3{
+  color: var(--text);
+}
+
+.cta-card--embedded p{
+  color: var(--muted);
+}
+
+/* CTA card – stacked layout variant (actions under copy) */
+.cta-card--stacked{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cta-card--stacked .cta-actions{
+  margin-top: 16px;
+}
 
 /* Footer */
 .site-footer{
@@ -176,4 +225,92 @@
   color: var(--muted);
   font-size: 13px;
   max-width: 95ch;
+}
+
+/* Footer (upgraded layout) */
+.footer-top{
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 28px;
+  padding: 34px 0 22px;
+}
+
+.footer-blurb{
+  margin: 10px 0 0;
+  color: var(--muted);
+  max-width: 52ch;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-cols{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.footer-title{
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.footer-link{
+  display: inline-block;
+  padding: 6px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-link:hover{
+  color: var(--text);
+}
+
+.footer-bottom{
+  border-top: 1px solid var(--border);
+  padding: 18px 0 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.footer-fineprint{
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 95ch;
+  line-height: 1.6;
+}
+
+.footer-legal{
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .footer-top{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-cols{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal{
+    white-space: normal;
+  }
+}
+
+@media (max-width: 640px){
+  .site-header{
+    transform: none !important;
+  }
 }
