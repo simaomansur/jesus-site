@@ -18,6 +18,7 @@
 
 html{
     scroll-padding-top: 90px;
+    overflow-x: hidden;
 }
 
 body{
@@ -29,6 +30,7 @@ body{
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 img{ max-width:100%; display:block; }

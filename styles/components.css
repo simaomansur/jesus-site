@@ -27,6 +27,7 @@
   justify-content: space-between;
   gap: 18px;
   padding: 14px 0;
+  min-width: 0;
 }
 
 .brand-logo{
@@ -40,6 +41,7 @@
   gap: 14px;      /* keeps it one line */
   flex-wrap: nowrap;
   white-space: nowrap;
+  min-width: 0;
 }
 
 .nav-link{
@@ -306,6 +308,22 @@
 
   .footer-legal{
     white-space: normal;
+  }
+
+    .header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    white-space: normal;
+    justify-content: center;
+  }
+
+  .header-cta {
+    width: 100%;
+    justify-content: center;
   }
 }
 
