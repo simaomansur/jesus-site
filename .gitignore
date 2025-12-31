@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Node / tooling (safe even if unused)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts (future-proofing)
+dist/
+build/
+
+# Editor / OS noise
+.vscode/
+.idea/
