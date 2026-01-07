@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Rocky Mountain Hyperbaric Institute</title>
+  <meta
+    name="description"
+    content="Contact Rocky Mountain Hyperbaric Institute. Ask a question or request a consultation."
+  />
+
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/components.css" />
+  <link rel="stylesheet" href="/styles/contact.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html">
+        <img class="brand-logo" src="/assets/global/logo.png" alt="Rocky Mountain Hyperbaric Institute" />
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/pages/about.html">About</a>
+        <a class="nav-link" href="/pages/how-hbot-works.html">How HBOT Works</a>
+        <a class="nav-link" href="/pages/conditions.html">Conditions We Treat</a>
+        <a class="nav-link" href="/pages/veterans.html">Veterans</a>
+        <a class="nav-link" href="/pages/pricing-coverage.html">Pricing & Coverage</a>
+        <a class="nav-link is-active" aria-current="page" href="/pages/contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="contact-hero">
+      <div class="contact-hero-overlay"></div>
+
+      <div class="container">
+        <div class="contact-hero-panel">
+          <p class="about-kicker">Contact</p>
+          <h1>Get in touch</h1>
+          <p class="about-lead">
+            We’re here to answer questions and help you understand next steps.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact content -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Form card -->
+        <div class="contact-card">
+          <h2>Send a message</h2>
+          <p class="subhead">
+            This form is a placeholder while the site is under development.
+          </p>
+
+          <form>
+            <label>
+              Name
+              <input type="text" placeholder="Your name" disabled />
+            </label>
+
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" disabled />
+            </label>
+
+            <label>
+              Phone (optional)
+              <input type="tel" placeholder="(303) 555-1234" disabled />
+            </label>
+
+            <label>
+              Message
+              <textarea rows="4" placeholder="How can we help?" disabled></textarea>
+            </label>
+
+            <button class="btn btn-primary btn-disabled" type="button" disabled>
+              Form coming soon
+            </button>
+          </form>
+        </div>
+
+        <!-- Info card -->
+        <div class="contact-card contact-info">
+          <h2>Contact information</h2>
+
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:jesus@rockymountainhbot.com">jesus@rockymountainhbot.com</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <a href="tel:13034424124">303-442-4124</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Address</strong>
+            <address>
+              225 W South Boulder Road<br />
+              Suite 101<br />
+              Louisville, CO 80027
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <strong>Hours</strong>
+            <span>By appointment<br />Response within 1 business day</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as other pages) -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <strong>Rocky Mountain Hyperbaric Institute</strong>
+        <div class="footer-muted">
+          Louisville, CO <span class="dot">•</span> Serving the Front Range
+        </div>
+        <p class="footer-blurb">
+          Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting.
+        </p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-title">Contact</div>
+          <a class="footer-link" href="/pages/contact.html">Contact information</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Explore</div>
+          <a class="footer-link" href="/pages/how-hbot-works.html">How HBOT works</a>
+          <a class="footer-link" href="/pages/conditions.html">Conditions we treat</a>
+          <a class="footer-link" href="/pages/pricing-coverage.html">Pricing & Coverage</a>
+          <a class="footer-link" href="/pages/veterans.html">Veterans</a>
+          <a class="footer-link" href="/pages/about.html">About</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Hours</div>
+          <div class="footer-muted">By appointment</div>
+          <div class="footer-muted">Response within 1 business day</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-fineprint">
+        Information on this website is for educational purposes and is not medical advice.
+      </div>
+      <div class="footer-legal">
+        © <span id="year"></span> Rocky Mountain Hyperbaric Institute
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
