@@ -261,7 +261,7 @@
 }
 
 .footer-link{
-  display: inline-block;
+  display: block;
   padding: 6px 0;
   color: var(--muted);
   font-size: 14px;
