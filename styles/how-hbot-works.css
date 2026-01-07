@@ -1,0 +1,145 @@
+/* =========================================================
+   HOW HBOT WORKS PAGE STYLES
+   Matches Home/About patterns (hero background + glass panel)
+   ========================================================= */
+
+/* HERO */
+.hbot-hero{
+  position: relative;
+  padding: 120px 0 140px;
+
+  /* Swap this to whatever image you want for the hero background */
+  background-image: url("/assets/how-hbot-works/chamber-buttons.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hbot-hero-overlay{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(80% 80% at 50% 40%, rgba(10, 20, 28, 0.35), rgba(10, 20, 28, 0.70)),
+    linear-gradient(180deg, rgba(10, 20, 28, 0.55), rgba(10, 20, 28, 0.65));
+}
+
+.hbot-hero-panel{
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 42px 36px;
+  color: #fff;
+
+  background: rgba(12, 28, 40, 0.30);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 24px 70px rgba(0,0,0,0.28);
+}
+
+.hbot-kicker{
+  font-size: 13px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
+  margin: 0 0 16px;
+}
+
+.hbot-hero h1{
+  font-size: clamp(36px, 4.6vw, 56px);
+  line-height: 1.12;
+  margin: 0 0 18px;
+  color: #fff;
+}
+
+.hbot-lead{
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 62ch;
+  opacity: 0.92;
+  margin: 0;
+}
+
+/* CONTENT HELPERS */
+.hbot-narrow{
+  max-width: 78ch;
+}
+
+.hbot-body{
+  margin: 0 0 14px;
+  color: var(--muted);
+  max-width: 78ch;
+}
+
+/* SPLIT SECTIONS */
+.hbot-split{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.hbot-split--reverse{
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.hbot-media{
+  margin: 0;
+  align-self: start;
+}
+
+.hbot-media img{
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* CARDS */
+.hbot-cards{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.hbot-fineprint{
+  margin-top: 18px;
+  max-width: 95ch;
+}
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+  .hbot-hero{
+    padding: 90px 0 100px;
+  }
+
+  .hbot-hero-panel{
+    padding: 34px 24px;
+  }
+
+  .hbot-hero h1{
+    font-size: clamp(30px, 7vw, 42px);
+  }
+
+  .hbot-split,
+  .hbot-split--reverse{
+    grid-template-columns: 1fr;
+  }
+
+  .hbot-cards{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Transparency accessibility */
+@media (prefers-reduced-transparency: reduce){
+  .hbot-hero-panel{
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(12, 28, 40, 0.50);
+  }
+}
