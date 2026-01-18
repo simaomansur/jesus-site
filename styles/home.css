@@ -6,72 +6,12 @@
    HERO – FULL WIDTH IMAGE
    ========================= */
 
-.hero{
-  position: relative;
-  min-height: 72vh;
-  padding-top: 16px;
+/* HOME HERO (only what’s unique to Home) */
+.home-hero{
   background-image: url("/assets/home/hero-chambers.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Gradient + subtle vignette for consistent readability */
-.hero-overlay{
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(80% 80% at 50% 40%, rgba(12, 28, 40, 0.35), rgba(12, 28, 40, 0.75)),
-    linear-gradient(180deg, rgba(12, 28, 40, 0.55), rgba(12, 28, 40, 0.65));
-}
-
-/* Centered hero content panel */
-.hero-content{
-  position: relative;
-  z-index: 1;
-  max-width: 920px;
-  padding: 34px 28px;
-  text-align: center;
-  color: white;
-
-  border-radius: 20px;
-  background: rgba(10, 20, 28, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
-}
-
-/* Institution kicker */
-.hero-kicker{
-  font-size: 14px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  font-weight: 600;
-  opacity: 0.85;
-  margin: 0;
-}
-
-/* Divider under kicker */
-.hero-divider{
-  width: 60px;
-  height: 1px;
-  margin: 18px auto 26px;
-  background: rgba(255, 255, 255, 0.28);
-}
-
-/* Main headline */
-.hero h1{
-  font-size: clamp(40px, 5vw, 58px);
-  line-height: 1.12;
-  font-weight: 700;
-  margin: 0 0 14px;
-  color: white;
-}
-
-/* Secondary line under the H1 */
+/* Home has an extra line under the H1 */
 .hero-secondary{
   font-size: clamp(21px, 2.4vw, 26px);
   font-weight: 500;
@@ -79,18 +19,6 @@
   color: rgba(255,255,255,0.9);
 }
 
-/* Subtitle */
-.hero-subhead{
-  font-size: 18px;
-  max-width: 58ch;
-  line-height: 1.5;
-  margin: 0 auto 28px;
-  opacity: 0.9;
-}
-
-.hero .btn{
-  margin-top: 14px;
-}
 
 /* =========================
    SPLIT LAYOUTS

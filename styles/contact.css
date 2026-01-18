@@ -1,25 +1,6 @@
-.contact-hero {
-  position: relative;
-  padding: 120px 0;
-  background-image: url("/assets/contact/entrance.jpg"); /* placeholder */
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(12, 28, 40, 0.65),
-    rgba(12, 28, 40, 0.75)
-  );
-}
-
-.contact-hero-panel {
-  position: relative;
-  max-width: 720px;
-  color: white;
+/* CONTACT HERO (shared page hero system) */
+.contact-hero{
+  background-image: url("/assets/contact/hero.jpg"); /* placeholder */
 }
 
 .contact-grid {
