@@ -8,7 +8,7 @@
 
 /* HOME HERO (only what’s unique to Home) */
 .home-hero{
-  background-image: url("/assets/home/hero-chambers.jpg");
+  background-image: url("/assets/home/hero-chambers.webp");
 }
 
 /* Home has an extra line under the H1 */
@@ -107,7 +107,7 @@
 .mountain-band{
   position: relative;
   padding: 110px 0 120px;
-  background-image: url("/assets/home/rocky-mountains.jpg");
+  background-image: url("/assets/home/rocky-mountains.webp");
   background-size: cover;
   background-position: center;
 }
@@ -116,9 +116,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(70% 90% at 40% 50%, rgba(12, 28, 40, 0.25), rgba(12, 28, 40, 0.70)),
-    linear-gradient(180deg, rgba(12, 28, 40, 0.58), rgba(12, 28, 40, 0.48));
+  background: rgba(12, 28, 40, 0.58);
 }
 
 .mountain-inner{

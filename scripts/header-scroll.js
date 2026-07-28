@@ -3,19 +3,32 @@
   if (!header) return;
 
   let lastScrollY = window.scrollY;
+  let ticking = false;
   const hideOffset = 90;
 
-  window.addEventListener("scroll", () => {
+  function updateHeader() {
     const currentScrollY = window.scrollY;
 
-    if (Math.abs(currentScrollY - lastScrollY) < 8) return;
+    if (Math.abs(currentScrollY - lastScrollY) >= 8) {
+      const shouldHide =
+        currentScrollY > lastScrollY &&
+        currentScrollY > hideOffset;
 
-    if (currentScrollY > lastScrollY && currentScrollY > hideOffset) {
-      header.classList.add("is-hidden");
-    } else {
-      header.classList.remove("is-hidden");
+      header.classList.toggle("is-hidden", shouldHide);
+      lastScrollY = currentScrollY;
     }
 
-    lastScrollY = currentScrollY;
-  });
+    ticking = false;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
 })();
