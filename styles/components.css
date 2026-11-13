@@ -838,3 +838,81 @@
     text-align: center;
   }
 }
+
+/* Vertical numbered timeline (sequential processes) */
+.timeline{
+  list-style: none;
+  counter-reset: step;
+  margin: 26px 0 0;
+  padding: 0;
+  max-width: 78ch;
+}
+
+.timeline-item{
+  counter-increment: step;
+  position: relative;
+  padding: 0 0 28px 64px;
+}
+
+.timeline-item::before{
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand);
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* connecting line between numbers */
+.timeline-item:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 44px;
+  bottom: 4px;
+  width: 2px;
+  background: rgba(47,111,158,0.25);
+}
+
+.timeline-item:last-child{ padding-bottom: 0; }
+
+.timeline-item h3{ margin-bottom: 6px; }
+
+.timeline-item p{
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Three plain columns separated by a brand rule (no cards) */
+.feature-row{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.feature{
+  border-top: 3px solid var(--brand);
+  padding-top: 18px;
+}
+
+.feature p{
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+@media (max-width: 980px){
+  .feature-row{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
