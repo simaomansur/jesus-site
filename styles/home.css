@@ -75,25 +75,40 @@
   text-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-/* Hero: one main action, secondary actions as quiet links */
-.home-hero .page-hero-content{
-  max-width: 900px;
-  border-radius: 20px;
-  background: rgba(10, 20, 28, 0.72);
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.16);
-  text-shadow: none;
+/* Hero: text sits directly on the photo, aligned with the page's left edge.
+   A left-to-right gradient keeps it readable over the busy chamber photo. */
+.home-hero{
+  justify-content: flex-start;
 }
 
-/* Home photo is busy, so it keeps a lighter overlay plus the text panel */
 .home-hero .page-hero-overlay{
-  background: rgba(12, 28, 40, 0.45);
+  background: linear-gradient(90deg,
+    rgba(10, 22, 32, 0.86) 0%,
+    rgba(10, 22, 32, 0.70) 45%,
+    rgba(10, 22, 32, 0.30) 100%);
+}
+
+.home-hero .page-hero-content{
+  width: min(var(--container), 100%);
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+
+.home-hero .page-hero-content > *{
+  max-width: 640px;
 }
 
 .home-hero .page-hero-subhead{
   font-size: 17px;
-  max-width: 62ch;
-  opacity: 0.85;
+  margin: 0 0 28px;
+  opacity: 0.88;
+}
+
+/* Phones: text spans the photo, so darken it evenly */
+@media (max-width: 980px){
+  .home-hero .page-hero-overlay{ background: rgba(10, 22, 32, 0.74); }
 }
 
 .btn-lg{
@@ -104,7 +119,7 @@
 .hero-links{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px 28px;
   margin-top: 20px;
   font-size: 15px;
