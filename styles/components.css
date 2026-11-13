@@ -849,3 +849,13 @@
 
   .page-hero--compact{ min-height: 40vh; }
 }
+
+/* Inline text link */
+.text-link{
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover{ color: var(--brand-2); }
