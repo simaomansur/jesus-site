@@ -19,18 +19,6 @@
   color: rgba(255,255,255,0.9);
 }
 
-
-/* =========================
-   SPLIT LAYOUTS
-   ========================= */
-
-.split{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
 /* =========================
    ROCKY MOUNTAIN BAND
    ========================= */
@@ -85,49 +73,4 @@
 
 .mountain-band .cta-card{
   max-width: 640px;
-}
-
-/* =========================
-   RESPONSIVE SAFETY
-   ========================= */
-
-@media (max-width: 980px){
-  .split{
-    grid-template-columns: 1fr;
-  }
-
-  .media-card::before{
-    background: none;
-  }
-
-  .cta-card{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero{
-    min-height: 62vh;
-  }
-
-  .hero-content{
-    padding: 34px 18px;
-  }
-
-  .hero h1{
-    font-size: clamp(32px, 7vw, 44px);
-    line-height: 1.10;
-  }
-
-  .hero-kicker{
-    letter-spacing: 0.18em;
-  }
-}
-
-/* Transparency accessibility */
-@media (prefers-reduced-transparency: reduce){
-  .hero-content{
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    background: rgba(10, 20, 28, 0.45);
-  }
 }

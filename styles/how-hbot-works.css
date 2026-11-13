@@ -60,18 +60,6 @@
 
 /* RESPONSIVE */
 @media (max-width: 980px){
-  .hbot-hero{
-    padding: 90px 0 100px;
-  }
-
-  .hbot-hero-panel{
-    padding: 34px 24px;
-  }
-
-  .hbot-hero h1{
-    font-size: clamp(30px, 7vw, 42px);
-  }
-
   .hbot-split,
   .hbot-split--reverse{
     grid-template-columns: 1fr;
@@ -79,15 +67,6 @@
 
   .hbot-cards{
     grid-template-columns: 1fr;
-  }
-}
-
-/* Transparency accessibility */
-@media (prefers-reduced-transparency: reduce){
-  .hbot-hero-panel{
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    background: rgba(12, 28, 40, 0.50);
   }
 }
 

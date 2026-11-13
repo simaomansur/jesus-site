@@ -46,20 +46,12 @@
 
 /* Responsive */
 @media (max-width: 980px){
-  .about-hero-inner{
-    grid-template-columns: 1fr;
-  }
-
   .about-split{
     grid-template-columns: 1fr;
   }
 
   .about-hero{
     padding: 90px 0 100px;
-  }
-
-  .about-hero-panel{
-    padding: 34px 24px;
   }
 
   .about-hero h1{
