@@ -49,12 +49,4 @@
   .about-split{
     grid-template-columns: 1fr;
   }
-
-  .about-hero{
-    padding: 90px 0 100px;
-  }
-
-  .about-hero h1{
-    font-size: clamp(30px, 7vw, 42px);
-  }
 }

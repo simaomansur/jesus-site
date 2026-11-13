@@ -7,8 +7,3 @@
   background-image: url("/assets/insurance/hero.webp");
 }
 
-@media (max-width: 980px){
-  .insurance-hero{
-    padding: 90px 0 100px;
-  }
-}

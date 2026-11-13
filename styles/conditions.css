@@ -131,10 +131,6 @@
 }
 
 @media (max-width: 980px){
-  .conditions-hero{
-    padding: 90px 0 100px;
-  }
-
   .indication-item summary{ padding: 16px; }
   .indication-content{ padding: 4px 16px 16px; }
 }

@@ -25,10 +25,3 @@
 .vets-partner-actions .btn{
   flex: 1 1 220px;
 }
-
-/* Responsive */
-@media (max-width: 980px){
-  .vets-hero{
-    padding: 90px 0 100px;
-  }
-}
