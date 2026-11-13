@@ -90,3 +90,16 @@
     background: rgba(12, 28, 40, 0.50);
   }
 }
+
+/* Photo captions */
+.hbot-media figcaption{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* "Oxygen + Pressure" callout beside "Why oxygen matters" */
+.hbot-basics{
+  align-self: center;
+  max-width: 440px;
+}
