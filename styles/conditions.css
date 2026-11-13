@@ -93,9 +93,13 @@
   max-width: 90ch;
 }
 
-.accordion-section h4{
+.accordion-section h3{
   margin: 18px 0 6px;
+  font-family: inherit;      /* small sub-labels stay in the body font */
   font-size: 15px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.4;
   color: var(--text);
 }
 
