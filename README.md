@@ -57,6 +57,11 @@ links and asset paths start with `/`.
   and/or footer on every page.
 - **Images:** convert photos to `.webp` (e.g. `cwebp -q 82 photo.jpg -o photo.webp`)
   and put them in `assets/<page>/`. Include `alt`, `width` and `height` on `<img>`.
+- **Hero photos** are `<img class="page-hero-img">` tags at the top of each page (not CSS
+  backgrounds), with `srcset` sizes `hero-800.webp`, `hero-1200.webp`, `hero-1600.webp`
+  and the full `hero.webp` (1920px). When replacing a hero photo, regenerate all sizes,
+  e.g. `cwebp -q 80 -resize 1200 0 original.jpg -o hero-1200.webp`. Keep
+  `fetchpriority="high"` on heroes and never lazy-load them.
 - **Colors and fonts** live as variables at the top of `styles/base.css`.
 
 ## Contact form — important
