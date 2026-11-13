@@ -67,9 +67,43 @@
   text-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-/* Hero has three buttons */
+/* Hero: one main action, secondary actions as quiet links */
 .home-hero .page-hero-content{
-  max-width: 980px;
+  max-width: 900px;
+  background: rgba(10, 20, 28, 0.72);
+}
+
+.home-hero .page-hero-subhead{
+  font-size: 17px;
+  max-width: 62ch;
+  opacity: 0.85;
+}
+
+.btn-lg{
+  padding: 15px 28px;
+  font-size: 16px;
+}
+
+.hero-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero-links a{
+  color: rgba(255,255,255,0.88);
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.35);
+  text-underline-offset: 4px;
+}
+
+.hero-links a:hover{
+  color: white;
+  text-decoration-color: white;
 }
 
 /* Mountain band: light eyebrow + spacing before the referral card */
