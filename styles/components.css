@@ -503,6 +503,7 @@
   position: relative;
   min-height: 46vh;     /* interior pages; Home sets its own taller hero */
   padding: 56px 24px;
+  background-color: #1d2c37;  /* dark placeholder while the photo loads */
   display: flex;
   align-items: center;
   justify-content: center;
