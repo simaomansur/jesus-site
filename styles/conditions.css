@@ -27,13 +27,11 @@
   background: white;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.04);
   scroll-margin-top: 110px;
 }
 
 .indication-item[open]{
   border-color: rgba(47,111,158,0.30);
-  box-shadow: var(--shadow);
 }
 
 .indication-item summary{
@@ -119,7 +117,7 @@
 .urgent-note{
   margin: 18px 0 0;
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: 8px;
   background: #fff4f2;
   border: 1px solid #f2c6bd;
   color: #7a2617;

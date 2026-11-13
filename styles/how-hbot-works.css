@@ -39,9 +39,8 @@
 .hbot-media img{
   width: 100%;
   height: auto;
-  border-radius: 22px;
+  border-radius: 10px;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
 }
 
 /* CARDS */
