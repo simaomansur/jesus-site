@@ -89,3 +89,25 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Links to #request land on the form, clear of the sticky header */
+#request {
+  scroll-margin-top: 150px;
+}
+
+/* Shown after "Open Email Draft" so visitors know what happened */
+.form-status {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #eef7f0;
+  border: 1px solid #b9dcc2;
+  color: #1f4d2b;
+  font-size: 15px;
+}
+
+.form-status a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}

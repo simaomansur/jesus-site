@@ -77,7 +77,7 @@
         </nav>
 
         <div class="header-cta">
-          <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
+          <a class="btn btn-primary" href="/pages/contact.html#request">Request a Consultation</a>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
         </div>
 
         <!-- General inquiry (opens an email draft; collects no medical information) -->
-        <div class="contact-card">
+        <div class="contact-card" id="request">
           <h2>Send a General Inquiry</h2>
           <p class="subhead">
             This form opens a pre-filled draft in your email app. Nothing is sent to RMHI until you send
@@ -193,6 +193,8 @@
             </label>
 
             <button class="btn btn-primary" type="submit">Open Email Draft</button>
+
+            <p class="form-status" id="inqStatus" role="status" hidden></p>
           </form>
 
           <p class="notice">
@@ -244,7 +246,7 @@
           <div class="footer-muted">Fax: 303-666-2112</div>
           <a class="footer-link" href="mailto:info@rockymountainhbot.com">info@rockymountainhbot.com</a>
           <div class="footer-muted">Visits by appointment</div>
-          <a class="footer-link" href="/pages/contact.html">Request a Consultation</a>
+          <a class="footer-link" href="/pages/contact.html#request">Request a Consultation</a>
         </div>
       </div>
     </div>
