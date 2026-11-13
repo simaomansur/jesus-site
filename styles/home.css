@@ -70,7 +70,16 @@
 /* Hero: one main action, secondary actions as quiet links */
 .home-hero .page-hero-content{
   max-width: 900px;
+  border-radius: 20px;
   background: rgba(10, 20, 28, 0.72);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.16);
+  text-shadow: none;
+}
+
+/* Home photo is busy, so it keeps a lighter overlay plus the text panel */
+.home-hero .page-hero-overlay{
+  background: rgba(12, 28, 40, 0.45);
 }
 
 .home-hero .page-hero-subhead{
