@@ -8,7 +8,6 @@
 
 /* HOME HERO (only what’s unique to Home) */
 .home-hero{
-  background-image: url("/assets/home/hero-chambers.webp");
   min-height: 72vh;
 }
 
@@ -36,20 +35,28 @@
 .mountain-band{
   position: relative;
   padding: 110px 0 120px;
-  background-image: url("/assets/home/rocky-mountains.webp");
-  background-size: cover;
-  background-position: center;
+}
+
+/* Background photo as a real <img> behind the overlay */
+.band-img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mountain-band::before{
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: rgba(12, 28, 40, 0.58);
 }
 
 .mountain-inner{
   position: relative;
+  z-index: 2;
   color: white;
   max-width: 900px;
 }

@@ -2,11 +2,6 @@
    ABOUT PAGE STYLES
    ========================================================= */
 
-/* ABOUT HERO */
-.about-hero{
-  background-image: url("/assets/about/hero.webp");
-}
-
 /* Who we are split */
 .about-split{
   display: grid;

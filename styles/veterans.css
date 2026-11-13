@@ -1,11 +1,6 @@
 /* =========================================================
    VETERANS PAGE
    ========================================================= */
-/* VETERANS HERO (shared page hero system) */
-.vets-hero{
-  background-image: url("/assets/veterans/hero.webp");
-}
-
 .vets-body{
   margin: 0 0 14px;
   color: var(--muted);

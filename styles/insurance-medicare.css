@@ -2,8 +2,5 @@
    INSURANCE COVERAGE (formerly Pricing & Coverage)
    ========================================================= */
 
-/* INSURANCE HERO (shared page hero system) */
-.insurance-hero{
-  background-image: url("/assets/insurance/hero.webp");
-}
-
+/* Hero photo is set in the page HTML (<img class="page-hero-img">).
+   No other page-specific styles yet. */

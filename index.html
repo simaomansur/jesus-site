@@ -42,6 +42,7 @@
     <div class="container header-inner">
       <a class="brand" href="/index.html" aria-label="Rocky Mountain Hyperbaric Institute home">
         <img
+          decoding="async"
           class="brand-logo"
           src="/assets/global/logo.webp"
           alt="Rocky Mountain Hyperbaric Institute"
@@ -86,6 +87,20 @@
   <main id="main" tabindex="-1">
     <!-- Hero (full-width band, constrained content) -->
     <section class="page-hero home-hero">
+      <img
+        class="page-hero-img"
+        src="/assets/home/hero-chambers-1600.webp"
+        srcset="/assets/home/hero-chambers-800.webp 800w,
+          /assets/home/hero-chambers-1200.webp 1200w,
+          /assets/home/hero-chambers-1600.webp 1600w,
+          /assets/home/hero-chambers.webp 1920w"
+        sizes="100vw"
+        width="1920"
+        height="1280"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      />
       <div class="page-hero-overlay"></div>
 
       <div class="page-hero-content">
@@ -218,6 +233,7 @@
     <!-- Full-width real photo -->
     <figure class="photo-band">
       <img
+        decoding="async"
         src="/assets/about/team.webp"
         alt="An RMHI team member on the phone beside a patient resting in a hyperbaric chamber"
         width="1600"
@@ -250,6 +266,7 @@
 
           <figure class="content-media">
             <img
+              decoding="async"
               src="/assets/global/page-hero.webp"
               alt="Three Sechrist hyperbaric chambers in the RMHI treatment room"
               width="900"
@@ -290,6 +307,15 @@
 
     <!-- Mountain band + embedded CTA -->
     <section class="mountain-band">
+      <img
+        class="band-img"
+        src="/assets/home/rocky-mountains.webp"
+        width="800"
+        height="600"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
       <div class="container mountain-inner">
         <h2>Unsure Whether HBOT Is Right for You?</h2>
         <p>
@@ -324,7 +350,7 @@
     <div class="container footer-top">
       <div class="footer-brand">
         <a class="footer-logo" href="/index.html" aria-label="Rocky Mountain Hyperbaric Institute home">
-          <img src="/assets/global/logo.webp" alt="Rocky Mountain Hyperbaric Institute" width="132" height="60" loading="lazy" />
+          <img decoding="async" src="/assets/global/logo.webp" alt="Rocky Mountain Hyperbaric Institute" width="132" height="60" loading="lazy" />
         </a>
         <div class="footer-muted">Hyperbaric medicine in Colorado since 2007.</div>
         <address class="footer-address">

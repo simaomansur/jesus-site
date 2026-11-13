@@ -3,9 +3,8 @@
    ========================================================= */
 
 /* CONDITIONS HERO */
-.conditions-hero{
-  background-image: url("/assets/conditions/hero.webp"); /* placeholder */
-  background-position: center 20%;
+.conditions-hero .page-hero-img{
+  object-position: center 20%;
 }
 
 .conditions-narrow{

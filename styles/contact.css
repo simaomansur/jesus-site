@@ -1,8 +1,3 @@
-/* CONTACT HERO (shared page hero system) */
-.contact-hero{
-  background-image: url("/assets/contact/hero.webp"); /* placeholder */
-}
-
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
