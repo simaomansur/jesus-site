@@ -3,10 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+  <link rel="apple-touch-icon" href="/assets/global/apple-touch-icon.png" />
   <title>How HBOT Works | Rocky Mountain Hyperbaric Institute</title>
   <meta
     name="description"
     content="Learn how hyperbaric oxygen therapy (HBOT) works, how increased oxygen delivery supports the body, and what a treatment session is like."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&display=swap"
   />
 
   <link rel="stylesheet" href="/styles/base.css" />
@@ -15,41 +24,87 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Header (same as home/about) -->
   <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Serving Colorado since 2007</span>
+        <span class="topbar-meta">
+          <a href="tel:3034424124">303-442-4124</a>
+          <span class="dot">•</span>
+          Louisville, Colorado
+        </span>
+      </div>
+    </div>
+
     <div class="container header-inner">
       <a class="brand" href="/index.html" aria-label="Rocky Mountain Hyperbaric Institute home">
         <img
+          decoding="async"
           class="brand-logo"
-          src="/assets/global/logo.png"
+          src="/assets/global/logo.webp"
           alt="Rocky Mountain Hyperbaric Institute"
+          width="396"
+          height="180"
         />
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link" href="/index.html">Home</a>
-        <a class="nav-link" href="/pages/about.html">About</a>
-        <a class="nav-link is-active" aria-current="page" href="/pages/how-hbot-works.html">How HBOT Works</a>
-        <a class="nav-link" href="/pages/conditions.html">Conditions We Treat</a>
-        <a class="nav-link" href="/pages/veterans.html">Veterans</a>
-        <a class="nav-link" href="/pages/pricing-coverage.html">Pricing & Coverage</a>
-        <a class="nav-link" href="/pages/contact.html">Contact</a>
-      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
 
-      <div class="header-cta">
-        <a class="btn btn-primary" href="/pages/contact.html">Request a Consultation</a>
+      <div class="nav-panel" id="site-nav">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav-link" href="/index.html">Home</a>
+          <a class="nav-link" href="/pages/about.html">About</a>
+          <a class="nav-link is-active" aria-current="page" href="/pages/how-hbot-works.html">How HBOT Works</a>
+          <a class="nav-link" href="/pages/conditions.html">Conditions We Treat</a>
+          <a class="nav-link" href="/pages/insurance-medicare.html">Insurance Coverage</a>
+          <a class="nav-link" href="/pages/veterans.html">Veterans</a>
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="nav-more">
+              Patients &amp; Providers
+            </button>
+            <div class="nav-dropdown-menu" id="nav-more">
+              <a class="nav-sublink" href="/pages/for-physicians.html">For Physicians</a>
+              <a class="nav-sublink" href="/pages/patient-forms.html">Patient Forms</a>
+              <a class="nav-sublink" href="/pages/other-services.html">Other Services</a>
+            </div>
+          </div>
+          <a class="nav-link" href="/pages/contact.html">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-primary" href="/pages/contact.html#request">Request a Consultation</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <!-- Hero -->
     <section class="page-hero how-hbot-hero">
+      <img
+        class="page-hero-img"
+        src="/assets/how-hbot-works/hero-1600.webp"
+        srcset="/assets/how-hbot-works/hero-800.webp 800w,
+          /assets/how-hbot-works/hero-1200.webp 1200w,
+          /assets/how-hbot-works/hero-1600.webp 1600w,
+          /assets/how-hbot-works/hero.webp 1920w"
+        sizes="100vw"
+        width="1920"
+        height="1280"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      />
       <div class="page-hero-overlay"></div>
 
       <div class="page-hero-content">
         <p class="page-hero-kicker">How Hyperbaric Oxygen Therapy Works</p>
-        <div class="page-hero-divider"></div>
 
         <h1>Understanding the role of oxygen and pressure</h1>
 
@@ -64,18 +119,31 @@
     <!-- Intro -->
     <section class="section">
       <div class="container">
-        <div class="hbot-narrow">
-          <h2>What is hyperbaric oxygen therapy?</h2>
-          <p class="subhead">
-            Hyperbaric oxygen therapy, often called HBOT, is a medical treatment that helps increase the amount
-            of oxygen available to the body.
-          </p>
+        <div class="hbot-split">
+          <div class="hbot-narrow">
+            <h2>What is hyperbaric oxygen therapy?</h2>
+            <p class="subhead">
+              Hyperbaric oxygen therapy, often called HBOT, is a medical treatment that helps increase the amount
+              of oxygen available to the body.
+            </p>
 
-          <p class="hbot-body">
-            During a session, individuals breathe medical-grade oxygen inside a specially designed chamber where
-            air pressure is safely increased under medical supervision. This combination of oxygen and pressure
-            allows oxygen to be delivered more efficiently throughout the body than it can be under normal conditions.
-          </p>
+            <p class="hbot-body">
+              During a session, individuals breathe medical-grade oxygen inside a specially designed chamber where
+              the atmospheric pressure is safely increased under medical supervision. This combination of oxygen and pressure
+              allows oxygen to be delivered more efficiently throughout the body than it can be under normal conditions.
+            </p>
+          </div>
+
+          <figure class="hbot-media">
+            <img
+              decoding="async"
+              src="/assets/how-hbot-works/controls.webp"
+              alt="Control panel and handset on a Sechrist hyperbaric chamber"
+              width="900"
+              height="600"
+            />
+            <figcaption>Sechrist hyperbaric chamber controls at RMHI.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -98,10 +166,13 @@
             </p>
           </div>
 
-          <!-- Optional image (safe to remove if you don't have it yet) -->
-          <figure class="hbot-media" aria-hidden="true">
-            <img src="/assets/how-hbot-works/oxygen-support.webp" alt="" />
-          </figure>
+          <aside class="info-panel hbot-basics">
+            <p class="eyebrow">HBOT Basics</p>
+            <h3>Oxygen + Pressure</h3>
+            <p>
+              Clinical hyperbaric therapy combines medical oxygen with a prescribed pressure environment.
+            </p>
+          </aside>
         </div>
       </div>
     </section>
@@ -191,16 +262,59 @@
             </p>
           </div>
 
-          <!-- Optional image (safe to remove if you don't have it yet) -->
-          <figure class="hbot-media" aria-hidden="true">
-            <img src="/assets/how-hbot-works/session.webp" alt="" />
+          <figure class="hbot-media">
+            <img
+              decoding="async"
+              src="/assets/how-hbot-works/session.webp"
+              alt="A patient resting in a Sechrist hyperbaric chamber with a dog lying beside the chamber"
+              width="1200"
+              height="888"
+              loading="lazy"
+            />
+            <figcaption>A treatment session at RMHI.</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- Individualized approach (no extra CTA spam) -->
+    <!-- What to expect: three-step process (moved from the homepage) -->
     <section class="section section-muted">
+      <div class="container">
+        <h2>What to Expect During Hyperbaric Oxygen Therapy</h2>
+        <p class="subhead">
+          At Rocky Mountain Hyperbaric Institute, treatment follows a structured, medically supervised process
+          that prioritizes patient safety while closely monitoring each patient’s progress throughout their
+          course of care.
+        </p>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <h3>Medical Evaluation &amp; Insurance Verification</h3>
+            <p>
+              We review your medical history, diagnosis, and clinical records to determine whether HBOT may be
+              appropriate. Our insurance team coordinates benefits verification and prior authorization when required.
+            </p>
+          </li>
+          <li class="timeline-item">
+            <h3>Physician-Supervised Hyperbaric Treatment</h3>
+            <p>
+              Treatments use medical-grade, hard-sided chambers and protocols established for your clinical needs.
+              Sessions are monitored by certified hyperbaric personnel.
+            </p>
+          </li>
+          <li class="timeline-item">
+            <h3>Ongoing Clinical Assessment</h3>
+            <p>
+              Throughout your course of treatment, our clinical team monitors your progress and coordinates with
+              your prescribing or referring physician when appropriate.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Individualized approach (no extra CTA spam) -->
+    <section class="section">
       <div class="container">
         <div class="hbot-narrow">
           <h2>A thoughtful, individualized approach</h2>
@@ -222,41 +336,49 @@
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-brand">
-        <strong>Rocky Mountain Hyperbaric Institute</strong>
-        <div class="footer-muted">
-          Louisville, CO <span class="dot">•</span> Serving the Front Range
-        </div>
-        <p class="footer-blurb">
-          Physician-supervised hyperbaric oxygen therapy in a calm outpatient setting.
-        </p>
+        <a class="footer-logo" href="/index.html" aria-label="Rocky Mountain Hyperbaric Institute home">
+          <img decoding="async" src="/assets/global/logo.webp" alt="Rocky Mountain Hyperbaric Institute" width="132" height="60" loading="lazy" />
+        </a>
+        <div class="footer-muted">Hyperbaric medicine in Colorado since 2007.</div>
+        <address class="footer-address">
+          225 W. South Boulder Road, Suite 101<br />
+          Louisville, CO 80027
+        </address>
       </div>
 
       <div class="footer-cols">
         <div class="footer-col">
-          <div class="footer-title">Contact</div>
-          <a class="footer-link" href="/pages/contact.html">Contact information</a>
-        </div>
-
-        <div class="footer-col">
-          <div class="footer-title">Explore</div>
-          <a class="footer-link" href="/pages/how-hbot-works.html">How HBOT works</a>
-          <a class="footer-link" href="/pages/conditions.html">Conditions we treat</a>
-          <a class="footer-link" href="/pages/pricing-coverage.html">Pricing & Coverage</a>
+          <div class="footer-title">For Patients</div>
+          <a class="footer-link" href="/pages/conditions.html">Conditions We Treat</a>
+          <a class="footer-link" href="/pages/insurance-medicare.html">Insurance Coverage</a>
+          <a class="footer-link" href="/pages/patient-forms.html">Patient Forms</a>
           <a class="footer-link" href="/pages/veterans.html">Veterans</a>
-          <a class="footer-link" href="/pages/about.html">About</a>
+          <a class="footer-link" href="/pages/other-services.html">Other Services</a>
+          <a class="footer-link" href="/pages/about.html">About RMHI</a>
         </div>
 
         <div class="footer-col">
-          <div class="footer-title">Hours</div>
-          <div class="footer-muted">By appointment</div>
-          <div class="footer-muted">Response within 1 business day</div>
+          <div class="footer-title">For Clinicians</div>
+          <a class="footer-link" href="/pages/for-physicians.html">For Physicians</a>
+          <a class="footer-link" href="/pages/how-hbot-works.html">How HBOT Works</a>
+          <a class="footer-link" href="/downloads/RMHI_Referral_Form_Fillable.pdf">Referral Form (PDF)</a>
+          <a class="footer-link" href="/pages/additional-clinical-applications.html">Additional Applications</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-title">Contact</div>
+          <a class="footer-link" href="tel:3034424124">303-442-4124</a>
+          <div class="footer-muted">Fax: 303-666-2112</div>
+          <a class="footer-link" href="mailto:info@rockymountainhbot.com">info@rockymountainhbot.com</a>
+          <div class="footer-muted">Visits by appointment</div>
+          <a class="footer-link" href="/pages/contact.html#request">Request a Consultation</a>
         </div>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <div class="footer-fineprint">
-        Information on this website is for educational purposes and is not medical advice. Please consult a qualified clinician regarding diagnosis and treatment.
+        Information on this website is educational and does not replace medical advice. Eligibility, safety, and insurance coverage require individual review.
       </div>
 
       <div class="footer-legal">

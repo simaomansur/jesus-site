@@ -1,0 +1,34 @@
+/* =========================================================
+   CONDITION DETAIL PAGES (shared by pages/condition-*.html)
+   ========================================================= */
+
+.condition-subhead{
+  margin: 26px 0 8px;
+}
+
+.condition-split{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.condition-body{
+  margin: 0 0 14px;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.condition-insurance .section-actions{
+  margin-top: 16px;
+}
+
+.info-panel .btn{
+  margin-top: 6px;
+}
+
+@media (max-width: 980px){
+  .condition-split{
+    grid-template-columns: 1fr;
+  }
+}

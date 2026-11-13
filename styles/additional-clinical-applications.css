@@ -1,0 +1,12 @@
+/* =========================================================
+   ADDITIONAL CLINICAL APPLICATIONS PAGE
+   ========================================================= */
+
+.applications-narrow{
+  max-width: 78ch;
+}
+
+.applications-body{
+  margin: 0 0 14px;
+  color: var(--muted);
+}

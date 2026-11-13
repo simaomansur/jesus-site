@@ -1,12 +1,8 @@
-/* CONTACT HERO (shared page hero system) */
-.contact-hero{
-  background-image: url("/assets/contact/hero.webp"); /* placeholder */
-}
-
 .contact-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 32px;
+  align-items: start;
 }
 
 .contact-card {
@@ -14,7 +10,6 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  box-shadow: var(--shadow);
 }
 
 .contact-card h2 {
@@ -33,33 +28,80 @@
 }
 
 .contact-card input,
+.contact-card select,
 .contact-card textarea {
   padding: 12px;
   border-radius: 8px;
   border: 1px solid var(--border);
-  font-size: 14px;
+  font-size: 16px; /* 16px avoids iOS zoom on focus */
+  font-family: inherit;
+  background: white;
+  color: var(--text);
 }
 
-.contact-card input:disabled,
-.contact-card textarea:disabled {
-  background: #f5f7fa;
+.contact-card label.checkbox-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
 }
 
-.btn-disabled {
-  opacity: 0.65;
-  cursor: not-allowed;
+.contact-card .checkbox-line input {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+.contact-card form .btn {
+  justify-self: start;
 }
 
 .contact-info .contact-item {
   margin-bottom: 18px;
 }
 
-.contact-info a {
+.contact-info .contact-item strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.contact-info .contact-item a {
   color: var(--brand);
+}
+
+.contact-info address {
+  font-style: normal;
+}
+
+.contact-info .btn {
+  margin-top: 4px;
 }
 
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Links to #request land on the form, clear of the sticky header */
+#request {
+  scroll-margin-top: 150px;
+}
+
+/* Shown after "Open Email Draft" so visitors know what happened */
+.form-status {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #eef7f0;
+  border: 1px solid #b9dcc2;
+  color: #1f4d2b;
+  font-size: 15px;
+}
+
+.form-status a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
 }

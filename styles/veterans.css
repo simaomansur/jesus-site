@@ -1,96 +1,22 @@
 /* =========================================================
    VETERANS PAGE
    ========================================================= */
-/* VETERANS HERO (shared page hero system) */
-.vets-hero{
-  background-image: url("/assets/veterans/hero.webp");
-}
-
-.vets-narrow{
-  max-width: 78ch;
-}
-
 .vets-body{
   margin: 0 0 14px;
   color: var(--muted);
   max-width: 78ch;
 }
 
-.vets-cards{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 12px;
+/* Paragraph that follows the investigational-use notice */
+.vets-after-notice{
+  margin-top: 18px;
 }
 
-.vets-split{
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 40px;
-  align-items: start;
+/* Healing Our Heroes buttons stack inside the narrow sidebar */
+.vets-partner-actions{
+  margin-top: 18px;
 }
 
-.vets-media{
-  margin: 0;
-  align-self: start;
-}
-
-.vets-media img{
-  width: 100%;
-  height: auto;
-  border-radius: 22px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.vets-callout{
-  max-width: 980px;
-}
-
-.vets-callout p{
-  margin: 0 0 10px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.vets-callout strong{
-  color: var(--text);
-}
-
-.vets-callout-muted{
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 980px){
-  .vets-hero{
-    padding: 90px 0 100px;
-  }
-
-  .vets-hero-panel{
-    padding: 34px 24px;
-  }
-
-  .vets-hero h1{
-    font-size: clamp(30px, 7vw, 42px);
-  }
-
-  .vets-cards{
-    grid-template-columns: 1fr;
-  }
-
-  .vets-split{
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Transparency accessibility */
-@media (prefers-reduced-transparency: reduce){
-  .vets-hero-panel{
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    background: rgba(12, 28, 40, 0.50);
-  }
+.vets-partner-actions .btn{
+  flex: 1 1 220px;
 }

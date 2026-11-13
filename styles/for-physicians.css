@@ -1,0 +1,43 @@
+/* =========================================================
+   FOR PHYSICIANS PAGE
+   ========================================================= */
+
+.physicians-narrow{
+  max-width: 78ch;
+}
+
+/* Referral desk contact list in the sidebar */
+.referral-desk{
+  margin: 6px 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.referral-desk dt{
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.referral-desk dd{
+  margin: 2px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.referral-desk a,
+.physicians-contact-line a{
+  color: var(--brand);
+}
+
+.physicians-contact-line{
+  margin: 8px 0 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Condition links are title-only here */
+.link-card h3{ margin-bottom: 0; }

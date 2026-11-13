@@ -1,6 +1,6 @@
 :root{
   --bg: #ffffff;
-  --muted-bg: #f5f7fa;
+  --muted-bg: #eaf2f8;      /* pale brand blue so alternating sections read clearly */
   --text: #1a232b;
   --muted: #52616b;
 
@@ -8,17 +8,22 @@
   --brand-2: #245a7f;
   --border: rgba(18, 34, 46, 0.12);
 
-  --radius: 16px;
+  --radius: 8px;            /* tighter corners read more clinical than soft "app" cards */
   --shadow: 0 16px 40px rgba(16, 24, 40, 0.08);
 
   --container: 1240px;      /* reduces “floating narrow” on wide screens */
+
+  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
 }
 
 *{ box-sizing: border-box; }
 
 html{
-    scroll-padding-top: 90px;
+    scroll-padding-top: 140px;   /* anchor jumps clear the sticky header */
+    /* clip (not hidden) prevents sideways scroll without breaking the
+       sticky header; hidden is the fallback for very old browsers */
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body{
@@ -31,6 +36,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img{ max-width:100%; display:block; }
@@ -50,7 +56,9 @@ a{ color: inherit; text-decoration: none; }
 }
 
 h1,h2,h3{
-  letter-spacing: -0.02em;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
   line-height: 1.12;
   margin: 0 0 12px;
 }

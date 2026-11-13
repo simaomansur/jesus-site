@@ -14,3 +14,6 @@ build/
 # Editor / OS noise
 .vscode/
 .idea/
+
+# Local Claude Code preview config (machine-specific)
+.claude/
