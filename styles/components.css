@@ -32,8 +32,13 @@
 }
 
 .brand-logo{
-  height: 65px;   /* bigger logo */
+  height: 65px;
   width: auto;
+}
+
+/* Wide screens have room for a larger logo next to the full nav */
+@media (min-width: 1400px){
+  .brand-logo{ height: 74px; }
 }
 
 .nav{
@@ -66,8 +71,9 @@
 
 /* Top info bar (inside the sticky header) */
 .topbar{
-  background: var(--brand-2);
-  color: rgba(255,255,255,0.92);
+  background: var(--muted-bg);
+  color: var(--brand-2);
+  border-bottom: 1px solid var(--border);
   font-size: 13px;
 }
 
@@ -79,9 +85,9 @@
   padding: 6px 0;
 }
 
-.topbar a{ color: white; font-weight: 600; }
+.topbar a{ color: var(--brand-2); font-weight: 700; }
 .topbar a:hover{ text-decoration: underline; }
-.topbar .dot{ color: rgba(255,255,255,0.45); }
+.topbar .dot{ color: rgba(36,90,127,0.4); }
 
 /* Nav panel wraps nav + CTA (collapses into a menu on small screens) */
 .nav-panel{
