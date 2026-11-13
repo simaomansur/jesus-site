@@ -206,32 +206,47 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 12px 18px;
+  padding: 12px 20px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 14px;
-  border: 1px solid transparent;
+  font-size: 15px;
+  border: 1.5px solid transparent;
   cursor: pointer;
   white-space: nowrap;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease,
+    box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .btn-primary{
   background: var(--brand);
   color: white;
-  box-shadow: 0 10px 26px rgba(47,111,158,0.20);
+  box-shadow: 0 8px 20px rgba(47,111,158,0.22);
 }
 
-.btn-primary:hover{ background: var(--brand-2); }
+.btn-primary:hover{
+  background: var(--brand-2);
+  box-shadow: 0 12px 26px rgba(36,90,127,0.28);
+  transform: translateY(-1px);
+}
 
+/* Outline button: clearly a button, not a faint pill */
 .btn-secondary{
   background: white;
-  border-color: var(--border);
-  color: var(--text);
+  border-color: var(--brand);
+  color: var(--brand-2);
 }
 
 .btn-secondary:hover{
-  border-color: rgba(47,111,158,0.35);
-  background: rgba(47,111,158,0.05);
+  background: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+
+.btn:active{ transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce){
+  .btn{ transition: none; }
+  .btn-primary:hover{ transform: none; }
 }
 
 /* Cards */
@@ -247,17 +262,6 @@
 .card p{ margin: 6px 0 0; color: var(--muted); }
 
 .section-actions{ margin-top: 24px; }
-
-.section .btn-secondary{
-  background: rgba(47, 111, 158, 0.06);
-  border-color: rgba(47, 111, 158, 0.25);
-  color: var(--brand);
-}
-
-.section .btn-secondary:hover{
-  background: rgba(47, 111, 158, 0.10);
-  border-color: rgba(47, 111, 158, 0.35);
-}
 
 /* CTA card */
 .cta-card{
@@ -306,12 +310,22 @@
 
 /* Footer */
 .site-footer{
-  border-top: 1px solid var(--border);
+  border-top: 4px solid var(--brand);
   background: #fff;
   padding: 28px 0 40px;
 }
 
 .footer-muted{ color: var(--muted); margin-top: 6px; }
+
+.footer-logo{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer-logo img{
+  height: 60px;
+  width: auto;
+}
 
 /* Footer (upgraded layout) */
 .footer-top{
