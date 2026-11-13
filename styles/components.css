@@ -859,3 +859,13 @@
 }
 
 .text-link:hover{ color: var(--brand-2); }
+
+/* Long button labels wrap instead of overflowing on phones */
+@media (max-width: 640px){
+  .btn-row .btn,
+  .cta-actions .btn,
+  .section-actions .btn{
+    white-space: normal;
+    text-align: center;
+  }
+}
