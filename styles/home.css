@@ -106,10 +106,7 @@
   text-decoration-color: white;
 }
 
-/* Mountain band: light eyebrow + spacing before the referral card */
-.eyebrow--light{
-  color: rgba(255,255,255,0.85);
-}
+/* Mountain band: spacing before the referral card */
 
 .home-band-actions{
   margin: 0 0 28px;
