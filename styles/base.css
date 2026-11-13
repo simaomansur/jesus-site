@@ -1,6 +1,6 @@
 :root{
   --bg: #ffffff;
-  --muted-bg: #f5f7fa;
+  --muted-bg: #eaf2f8;      /* pale brand blue so alternating sections read clearly */
   --text: #1a232b;
   --muted: #52616b;
 
