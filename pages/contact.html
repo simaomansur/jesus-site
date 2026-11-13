@@ -6,7 +6,7 @@
   <title>Contact | Rocky Mountain Hyperbaric Institute</title>
   <meta
     name="description"
-    content="Contact Rocky Mountain Hyperbaric Institute. Ask a question or request a consultation."
+    content="Contact Rocky Mountain Hyperbaric Institute in Louisville, CO. Phone 303-442-4124, referral fax 303-666-2112, info@rockymountainhbot.com."
   />
 
   <link rel="stylesheet" href="/styles/base.css" />
@@ -76,14 +76,14 @@
       <div class="page-hero-overlay"></div>
 
       <div class="page-hero-content">
-        <p class="page-hero-kicker">Contact</p>
+        <p class="page-hero-kicker">Contact RMHI</p>
         <div class="page-hero-divider"></div>
 
-        <h1>Get in touch</h1>
+        <h1>Connect With Our Team</h1>
 
         <p class="page-hero-subhead">
-          We’re here to answer questions and help you understand next steps. Most messages receive a response
-          within 1 business day.
+          Have a question about treatment, physician referrals, or insurance coordination? Contact our
+          office and we’ll help identify the next steps.
         </p>
       </div>
     </section>
@@ -92,67 +92,101 @@
     <section class="section">
       <div class="container contact-grid">
 
-        <!-- Form card -->
-        <div class="contact-card">
-          <h2>Send a message</h2>
-          <p class="subhead">
-            This form is a placeholder while the site is under development.
-          </p>
-
-          <form>
-            <label>
-              Name
-              <input type="text" placeholder="Your name" disabled />
-            </label>
-
-            <label>
-              Email
-              <input type="email" placeholder="you@example.com" disabled />
-            </label>
-
-            <label>
-              Phone (optional)
-              <input type="tel" placeholder="(303) 555-1234" disabled />
-            </label>
-
-            <label>
-              Message
-              <textarea rows="4" placeholder="How can we help?" disabled></textarea>
-            </label>
-
-            <button class="btn btn-primary btn-disabled" type="button" disabled>
-              Form coming soon
-            </button>
-          </form>
-        </div>
-
         <!-- Info card -->
         <div class="contact-card contact-info">
-          <h2>Contact information</h2>
+          <h2>Clinic Contact Information</h2>
 
           <div class="contact-item">
-            <strong>Email</strong>
-            <a href="mailto:jesus@rockymountainhbot.com">jesus@rockymountainhbot.com</a>
+            <strong>Office phone</strong>
+            <a href="tel:3034424124">303-442-4124</a>
           </div>
 
           <div class="contact-item">
-            <strong>Phone</strong>
-            <a href="tel:13034424124">303-442-4124</a>
+            <strong>Referral fax</strong>
+            <span>303-666-2112</span>
           </div>
 
           <div class="contact-item">
-            <strong>Address</strong>
+            <strong>General inquiries</strong>
+            <a href="mailto:info@rockymountainhbot.com">info@rockymountainhbot.com</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Location</strong>
             <address>
-              225 W South Boulder Road<br />
-              Suite 101<br />
+              225 W. South Boulder Road, Suite 101<br />
               Louisville, CO 80027
             </address>
           </div>
 
           <div class="contact-item">
-            <strong>Hours</strong>
-            <span>By appointment<br />Response within 1 business day</span>
+            <strong>Visits</strong>
+            <span>By appointment</span>
           </div>
+
+          <a
+            class="btn btn-secondary"
+            href="https://www.google.com/maps/search/?api=1&amp;query=225+W+South+Boulder+Rd+Suite+101+Louisville+CO+80027"
+            target="_blank"
+            rel="noopener"
+          >Directions on Google Maps ↗</a>
+        </div>
+
+        <!-- General inquiry (opens an email draft; collects no medical information) -->
+        <div class="contact-card">
+          <p class="eyebrow">Request a consultation</p>
+          <h2>Send a General Inquiry</h2>
+          <p class="subhead">
+            This form opens a pre-filled draft in your email app. Nothing is sent to RMHI until you send
+            that email yourself.
+          </p>
+
+          <form
+            id="contactInquiry"
+            action="mailto:info@rockymountainhbot.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="inqName">
+              Your name
+              <input id="inqName" name="name" type="text" autocomplete="name" required />
+            </label>
+
+            <label for="inqEmail">
+              Email address
+              <input id="inqEmail" name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <label for="inqPhone">
+              Phone (optional)
+              <input id="inqPhone" name="phone" type="tel" autocomplete="tel" />
+            </label>
+
+            <label for="inqTopic">
+              What can we help you with?
+              <select id="inqTopic" name="topic" required>
+                <option value="General consultation request">Consultation request</option>
+                <option value="Insurance coverage question">Insurance question</option>
+                <option value="Referral question">Referral question</option>
+                <option value="General question">General question</option>
+              </select>
+            </label>
+
+            <label class="checkbox-line" for="inqAck">
+              <input id="inqAck" type="checkbox" required />
+              <span>
+                I understand that this email draft must not contain medical records or sensitive health
+                information.
+              </span>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Open Email Draft</button>
+          </form>
+
+          <p class="notice">
+            <strong>Protecting patient information:</strong> Do not include medical records, diagnoses,
+            insurance identifiers, or other sensitive health information in ordinary email.
+          </p>
         </div>
 
       </div>
@@ -217,5 +251,6 @@
   </script>
 
   <script src="/scripts/header-scroll.js"></script>
+  <script src="/scripts/contact-mailto.js"></script>
 </body>
 </html>
