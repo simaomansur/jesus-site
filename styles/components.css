@@ -499,6 +499,12 @@
     white-space: normal;
   }
 
+  /* Stack CTA cards (copy above buttons) on smaller screens */
+  .cta-card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .footer-cols{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
