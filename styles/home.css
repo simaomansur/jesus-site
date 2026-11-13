@@ -60,6 +60,7 @@
   z-index: 2;
   color: white;
   max-width: 900px;
+  text-align: center;   /* centered like the hero sections */
 }
 
 .mountain-inner h2{
@@ -71,7 +72,7 @@
 .mountain-inner p{
   max-width: 70ch;
   opacity: 0.92;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
   text-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
@@ -123,8 +124,15 @@
 
 .home-band-actions{
   margin: 0 0 28px;
+  justify-content: center;
 }
 
 .mountain-band .cta-card{
   max-width: 640px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.mountain-band .cta-card .cta-actions{
+  justify-content: center;
 }
