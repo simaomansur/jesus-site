@@ -33,16 +33,15 @@
   box-shadow: var(--shadow);
 }
 
-/* Card grid */
-.about-cards{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 12px;
+/* Sub-headings inside the copy column */
+.about-copy h3{
+  margin: 22px 0 8px;
 }
 
-.about-cards .card{
-  height: 100%;
+.about-media figcaption{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 /* Responsive */
@@ -52,10 +51,6 @@
   }
 
   .about-split{
-    grid-template-columns: 1fr;
-  }
-
-  .about-cards{
     grid-template-columns: 1fr;
   }
 
